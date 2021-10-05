@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             moveObjectIntent.putExtra(MoveWithObjectActivity.EXTRA_PERSON,person);
             startActivity(moveObjectIntent);
         }else if(view.getId() == R.id.btn_dial_number){
-            String phoneNumber = "081210841382";
+            String phoneNumber = "";
             Intent dialPhoneIntent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + phoneNumber));
             startActivity(dialPhoneIntent);
         }else if(view.getId() == R.id.btn_move_for_result){
